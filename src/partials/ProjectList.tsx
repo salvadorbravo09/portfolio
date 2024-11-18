@@ -16,6 +16,39 @@ const ProjectList = () => (
   >
     <div className="flex flex-col gap-6">
       <Project
+        name="HR Tracker"
+        description={
+          <>
+            solución para la gestión de empleados, diseñada para administrar de
+            manera eficiente a las personas clave dentro de una organización,
+            incluyendo empleados y departamentos.
+            <div className="mt-4">
+              <a
+                href="https://github.com/salvadorbravo09/hrtracker"
+                className="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700"
+                target="_blank"
+              >
+                Ver en GitHub
+              </a>
+            </div>
+          </>
+        }
+        link="/"
+        img={{
+          src: '/assets/images/project-web-design.png',
+          alt: 'Project Web Design',
+        }}
+        category={
+          <>
+            <Tags color={ColorTags.RED}>Java</Tags>
+            <Tags color={ColorTags.BLUE}>Spring Boot</Tags>
+            <Tags color={ColorTags.ORANGE}>JPA</Tags>
+            <Tags color={ColorTags.GRAY}>MySQL</Tags>
+            <Tags color={ColorTags.PINK}>Lombok</Tags>
+          </>
+        }
+      />
+      <Project
         name="ElMirador"
         description={
           <>
